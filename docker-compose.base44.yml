@@ -1,0 +1,10 @@
+services:
+  web:
+    image: python:3.12-slim
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    command: python -m http.server 3000 --bind 0.0.0.0
+    restart: unless-stopped
