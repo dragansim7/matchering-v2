@@ -1,0 +1,8 @@
+{
+  "name": "Matchering",
+  "description": "Open source audio matching and mastering app. Match the EQ, loudness, RMS, and dynamics of your track to a reference.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
