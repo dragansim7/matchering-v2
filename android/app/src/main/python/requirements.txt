@@ -1,0 +1,8 @@
+# Python requirements for Chaquopy (on-device processing)
+# Chaquopy provides pre-built wheels for numpy and scipy.
+# resampy is pure-Python (needs numpy + scipy).
+# statsmodels is optional — mg_android.py provides a fallback LOWESS.
+numpy
+scipy
+resampy
+statsmodels

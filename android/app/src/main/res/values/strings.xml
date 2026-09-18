@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Matchering</string>
+    <string name="title">Matchering 2.0</string>
+    <string name="subtitle">On-Device Audio Matching &amp; Mastering</string>
+    <string name="target_label">TARGET (track to master)</string>
+    <string name="reference_label">REFERENCE (sound to match)</string>
+    <string name="no_file_selected">No file selected</string>
+    <string name="select_target">Select Target Track</string>
+    <string name="select_reference">Select Reference Track</string>
+    <string name="process">Master Track</string>
+    <string name="play">Play Result</string>
+    <string name="share">Share Result</string>
+</resources>

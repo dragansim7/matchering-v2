@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Matchering" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#fed535</item>
+        <item name="colorPrimaryVariant">#e6c030</item>
+        <item name="colorOnPrimary">#000000</item>
+        <item name="colorSecondary">#2d2d2d</item>
+        <item name="colorOnSecondary">#ffffff</item>
+        <item name="android:colorBackground">#1a1a1a</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorSecondary">#aaaaaa</item>
+    </style>
+</resources>

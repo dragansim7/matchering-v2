@@ -13,6 +13,14 @@ This repo is **Matchering 2.0** — an open-source audio matching/mastering Pyth
 - No database, no external services, no secrets required.
 - Edits to `index.html` / `page/` are visible on browser refresh (no live-reload server; call `reload_preview` after changes if needed).
 
+## Android App (`android/`)
+- Native Kotlin app using Chaquopy to run the matchering Python library on-device.
+- `android/app/src/main/python/mg_android.py` — bridge script that shims `soundfile` with Python's `wave` module (avoids native libsndfile), patches `scipy.ndimage.filters`, and provides a `statsmodels` LOWESS fallback.
+- The `copyMatchering` Gradle task copies `matchering/` from repo root into `app/src/main/python/matchering/` before each build.
+- Kotlin side (`AudioConverter.kt`) decodes any audio format to WAV via MediaExtractor/MediaCodec before passing to Python.
+- **Cannot be built in this sandbox** (no Android SDK) — build with Android Studio. The Python bridge has been tested in the Docker container and works.
+- See `android/README.md` for build instructions.
+
 ## Library Dependencies
 - Python 3.8+, libsndfile1 (system), numpy, scipy, soundfile, resampy, statsmodels (see `requirements.txt`).
 - The library is not currently installed in the preview container; it only serves static files.
